@@ -22,3 +22,39 @@ void recursionQuestion1Test()
 }
 
 
+
+void findMinMax(int* arr, int size, int& min, int& max, int pos)
+{
+	if (pos == size)
+		return;
+	if (pos == 0)
+		min = max = arr[pos];
+	else if (min > arr[pos])
+		min = arr[pos];
+	if (max < arr[pos])
+		max = arr[pos];
+
+	findMinMax(arr, size, min, max, pos + 1);
+}
+
+void recursionQuestion2Test()
+{
+	int* arr = new int[10]{ 2,9,55,1,4,-5,6,8,7,9 };
+	int min = 0;
+	int max = 0;
+	findMinMax(arr, 10, min, max, 0);
+	cout << "Min: " << min << endl;
+	cout << "Max: " << max << endl;
+
+
+}
+
+int stringToInt(string s)
+{
+
+}
+
+void recursionQuestion2Test()
+{
+
+}
