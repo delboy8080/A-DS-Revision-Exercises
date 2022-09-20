@@ -18,3 +18,22 @@ int total(int* arr, int size)
 	}
 	return sum;
 }
+
+
+void swap(int* x, int* y)
+{
+	int temp = *x;
+	*x = *y;
+	*y = temp;
+}
+
+void ptrQ2Test()
+{
+	int* x = new int;
+	int* y = new int;
+	*x = 10;
+	*y = 20;
+	cout << "X: " << *x << " - Y:" << *y << endl;
+	swap(x, y);
+	cout << "X: " << *x << " - Y:" << *y << endl;
+}

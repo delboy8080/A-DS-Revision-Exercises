@@ -7,5 +7,5 @@ using namespace std;
 
 int main()
 {
-	ptrQ1Test();
+	ptrQ2Test();
 }
