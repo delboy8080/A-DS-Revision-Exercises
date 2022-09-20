@@ -41,7 +41,7 @@ void ptrQ2Test()
 string encrypt(string s, int shift)
 {
 	string encrypted="";
-	char* ec=new char;
+	unsigned char* ec=new unsigned char;
 	for (char c : s)
 	{
 		if (c >= 'A' && c <= 'Z')
@@ -56,6 +56,10 @@ string encrypt(string s, int shift)
 		else if (c >= 'a' && c <= 'z')
 		{
 			*ec = c + shift;
+			if (c == 'w')
+			{
+				cout << c << " - " << (int) * ec << endl;
+			}
 			if (*ec > 'z')
 			{
 				cout  << c <<" - " << *ec << endl;
