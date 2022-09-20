@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+/.vs/Revision Exercises
+/Revision Exercises/Revision Exercises.vcxproj.user
+/Revision Exercises/Revision Exercises.vcxproj.filters
+/Revision Exercises/Revision Exercises.vcxproj
+*.sln
