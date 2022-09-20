@@ -2,10 +2,10 @@
 
 using namespace std;
 #include "Recursion.h"
-
+#include "Pointers.h"
 
 
 int main()
 {
-	recursionQuestion4Test();
+	ptrQ1Test();
 }
