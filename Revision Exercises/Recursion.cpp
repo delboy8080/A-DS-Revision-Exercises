@@ -51,10 +51,18 @@ void recursionQuestion2Test()
 
 int stringToInt(string s)
 {
-
+	if (s.size() == 0)
+		return 0;
+	return ((s[0]-'0') * pow(10, s.size() - 1)) 
+		+ stringToInt(s.substr(1));
 }
 
-void recursionQuestion2Test()
+void recursionQuestion4Test()
 {
+	cout << "Please enter a number" << endl;
+	string num;
+	cin >> num;
+	int n = stringToInt(num);
+	cout << "The number you entered was " << n;
 
 }
