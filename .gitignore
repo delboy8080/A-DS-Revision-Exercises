@@ -35,3 +35,5 @@
 /Revision Exercises/Revision Exercises.vcxproj.filters
 /Revision Exercises/Revision Exercises.vcxproj
 *.sln
+/Revision Exercises/x64/Debug
+*.pdb
