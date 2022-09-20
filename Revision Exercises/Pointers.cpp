@@ -37,3 +37,46 @@ void ptrQ2Test()
 	swap(x, y);
 	cout << "X: " << *x << " - Y:" << *y << endl;
 }
+
+string encrypt(string s, int shift)
+{
+	string encrypted="";
+	char* ec=new char;
+	for (char c : s)
+	{
+		if (c >= 'A' && c <= 'Z')
+		{
+			*ec = c + shift;
+			if (*ec > 'Z')
+			{
+				*ec = (*ec) - 'Z' + ('A' - 1);
+			}
+
+		}
+		else if (c >= 'a' && c <= 'z')
+		{
+			*ec = c + shift;
+			if (*ec > 'z')
+			{
+				cout  << c <<" - " << *ec << endl;
+				*ec = *ec - 'z' + ('a' - 1);
+				cout <<c<< " - " << *ec << endl;
+			}
+
+		}
+		else
+		{
+			*ec = c;
+		}
+
+		encrypted += *ec;
+	}
+	return encrypted;
+}
+
+void ptrQ6Test()
+{
+	string d = "The quick brown fox jumped over the lazy dog.";
+	string enc = encrypt(d, 10);
+	cout << "Encrypted Message: " << enc << endl;
+}
