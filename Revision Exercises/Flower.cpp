@@ -41,3 +41,15 @@ ostream& operator<<(ostream& out, const Flower& flower)
 		<< flower.getNumberOfPetals() << " Petals" << endl;
 	return out;
 }
+
+Flower Flower::operator++()
+{
+	this->numberOfPetals = this->numberOfPetals + 1;
+	return *this;
+}
+Flower Flower::operator++(int u)
+{
+	Flower f(*this);
+	this->numberOfPetals = this->numberOfPetals+1;
+	return f;
+}

@@ -19,5 +19,9 @@ public:
 
 	friend ostream& operator<<(ostream& out, const Flower& flower);
 	Flower operator+(float prIncrease);
+	Flower operator++(); // pre increment
+	Flower operator++(int u); // posst
+
+
 };
 
