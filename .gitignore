@@ -37,3 +37,13 @@
 *.sln
 /Revision Exercises/x64/Debug
 *.pdb
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/rev2/v17/.suo
+/.vs/ProjectSettings.json
+/Revision Exercises/.vs/Revision Exercises/v17
+/Revision Exercises/.vs/Revision Exercises/FileContentIndex/read.lock
+/Revision Exercises/.vs/Revision Exercises/FileContentIndex/c150e4cc-82c3-459f-acc1-8b8f95cbaf1c.vsidx
+/Revision Exercises/.vs/Revision Exercises/FileContentIndex/9c93b966-dea2-46fc-a239-cddfd210c7a3.vsidx
+/Revision Exercises/.vs/Revision Exercises/FileContentIndex/dd30bf73-5255-4dd3-b353-68d9861ef1ff.vsidx
+/Revision Exercises/.vs/Revision Exercises/FileContentIndex
