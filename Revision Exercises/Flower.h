@@ -18,5 +18,6 @@ public:
 	void setPrice(float f);
 
 	friend ostream& operator<<(ostream& out, const Flower& flower);
+	Flower operator+(float prIncrease);
 };
 

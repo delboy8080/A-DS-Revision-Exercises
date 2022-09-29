@@ -30,10 +30,13 @@ void Flower::setPrice(float f)
 {
 	this->price = f;
 }
-
+Flower Flower::operator+(float prIncrease)
+{
+	Flower f(this->name, this->numberOfPetals, this->price+prIncrease);
+	return f;
+}
 ostream& operator<<(ostream& out, const Flower& flower)
 {
-
 	out << flower.name << "(" << flower.price << ") "
 		<< flower.getNumberOfPetals() << " Petals" << endl;
 	return out;
